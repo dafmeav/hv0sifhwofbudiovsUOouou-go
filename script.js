@@ -151,18 +151,16 @@ function moveBall(){
         breakBlock(place.x, place.y)
     }
 
-
-
 }
 
 // 全体の描画処理
 function draw() {
 
     if(game.rightPressed && game.paddleXHS < 1.0-game.paddleWidthHS) {
-        game.paddleXHS += 0.015;
+        game.paddleXHS += game.paddleSpeedHS;
     }
     else if(game.leftPressed && game.paddleXHS > 0) {
-        game.paddleXHS -= 0.015;
+        game.paddleXHS -= game.paddleSpeedHS;
     }
 
     if(game.ballReleased == true) {
@@ -256,6 +254,7 @@ function set_game(){
     game.paddleHeightVS = 0.02;
     game.paddleXHS = 0.5 - game.paddleWidthHS*0.5;
     game.paddleYVS = 0.9;
+    game.paddleSpeedHS = 0.01;
 
     game.blocks = []
     game.blocksNum = {x:8, y:8};
