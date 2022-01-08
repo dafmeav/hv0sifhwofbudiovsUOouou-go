@@ -7,6 +7,7 @@ JavaScriptによるブロック崩し。<br>
 
 2022/1/5 : yukidama氏によるベースの実装<br>
 2022/1/8 : ぺるき氏による機能追加 (ブロックの追加 / ブロックの当たり判定の追加 など )<br>
+2022/1/8 : itch.ioでのプレ公開 ( https://tadateruki.itch.io/js-breakout )<br>
 
 #### 制作班メンバー
  - yukidama <br>
